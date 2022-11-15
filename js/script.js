@@ -11,12 +11,23 @@ setInterval(function () {
     segundosTotal = segundosTotal % 86400;
 
     horas = parseInt(segundosTotal / 3600);
+    if (horas < 10) {
+        horas = '0' + horas;
+    }
     segundosTotal = segundosTotal % 3600;
 
     minutos = parseInt(segundosTotal / 60);
+    if (minutos < 10) {
+        minutos = '0' + minutos;
+
+    }
     segundosTotal = segundosTotal % 60;
 
+
     segundos = parseInt(segundosTotal % 60);
+    if(segundos < 10){
+        segundos = '0' + segundos;
+           }
 
     document.getElementById("dias").innerHTML = dias;
     document.getElementById("horas").innerHTML = horas;
