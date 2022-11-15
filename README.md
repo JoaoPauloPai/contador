@@ -1,2 +1,2 @@
 # contador
-contador para gerenciar a viagem da munha amiga SEL
+contador para gerenciar a viagem da minha amiga SEL
