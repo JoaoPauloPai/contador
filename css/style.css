@@ -1,11 +1,31 @@
-*{
+
+
+body {
+    background-color: #c4cfdd;
+}
+.id-sel {
+    border-radius: 5px;
+    text-align: center;
+    color: #ec78b2;
+    box-sizing: border-box;
+    font-size: 60px;
+    background-color: #555549;
+}
+
+.index:hover {
+    background: white;
+    color: red;
+    border: 2px solid red;
+}
+
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
 }
 
-#contReg div{
+#contReg div {
 
     width: 150px;
     height: 90px;
@@ -14,10 +34,22 @@
     padding-top: 5px;
     box-sizing: border-box;
     text-align: center;
+    font-weight: bold;
     border-radius: 5px;
     font-size: 60px;
 
     background-color: #200a3f;
     color: #00e385;
 
-        }
+}
+
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-box {
+    background-color: rgb(116, 70, 97);
+    height: 300px;
+}

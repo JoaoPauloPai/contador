@@ -8,6 +8,9 @@ setInterval(function () {
     var segundosTotal = (dataChegadaSel - dataAtual) / 1000;
 
     dias = parseInt(segundosTotal / 86400);
+    if(dias < 10) {
+        dias = '0' + dias;
+    }
     segundosTotal = segundosTotal % 86400;
 
     horas = parseInt(segundosTotal / 3600);
@@ -25,9 +28,9 @@ setInterval(function () {
 
 
     segundos = parseInt(segundosTotal % 60);
-    if(segundos < 10){
+    if (segundos < 10) {
         segundos = '0' + segundos;
-           }
+    }
 
     document.getElementById("dias").innerHTML = dias;
     document.getElementById("horas").innerHTML = horas;
