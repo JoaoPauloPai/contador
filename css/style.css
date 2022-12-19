@@ -2,6 +2,14 @@
 
 body {
     background-color: #c4cfdd;
+
+}
+
+section{
+    padding: 150px;  
+    background-image: url(../image/vooSel.jpg);
+    background-size: cover;
+    overflow: hidden;
 }
 .id-sel {
     border-radius: 5px;
@@ -52,4 +60,5 @@ body {
 .container-box {
     background-color: rgb(116, 70, 97);
     height: 300px;
+    width: 500px;
 }
