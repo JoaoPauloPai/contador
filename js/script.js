@@ -1,11 +1,13 @@
 
-var dataChegadaSel = new Date("December 9, 2022 21:30").getTime();
+//var dataChegadaSel = new Date("December 9, 2022 21:30").getTime();
+var dataPartidaSel = new Date("December 10, 2022 01:15").getTime();
 var dias, horas, minutos, segundos;
 
 setInterval(function () {
 
     var dataAtual = new Date().getTime();
-    var segundosTotal = (dataChegadaSel - dataAtual) / 1000;
+  //  var segundosTotal = (dataChegadaSel - dataAtual) / 1000;
+  var segundosTotal = (dataAtual - dataPartidaSel) / 1000;
 
     dias = parseInt(segundosTotal / 86400);
     if(dias < 10) {
